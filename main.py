@@ -16,7 +16,7 @@ class KeywordReplyPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
         # 修复：手动创建插件数据目录
-        plugin_data_dir = os.path.join("data", "plugins", "keyword_reply")
+        plugin_data_dir = os.path.join("data", "plugins", "astrbot_plugin_keyword_reply")
         os.makedirs(plugin_data_dir, exist_ok=True)
         self.config_path = os.path.join(plugin_data_dir, "keyword_reply_config.json")
         self.keyword_map = self._load_config()
