@@ -10,7 +10,7 @@ logger = logging.getLogger("KeywordReplyPlugin")
     "自定义回复插件",
     "腾讯元宝",
     "智能关键词回复插件",
-    "1.1.0"
+    "v1.1.0"
 )
 class KeywordReplyPlugin(Star):
     def __init__(self, context: Context):
